@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/jazz_logo.png";
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
 
 
   return (
@@ -10,27 +13,23 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Logo"
-            />
+          <img src={logo} alt="Logo" className="h-8 w-auto" />
           </div>
 
           {/* Links (desktop) */}
           <div className="hidden md:flex space-x-4">
-            <a href="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
+            <Link to="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
               Inicio
-            </a>
-            <a href="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
+            </Link>
+            <Link to="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
               Conócenos
-            </a>
-            <a href="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
+            </Link>
+            <Link to="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
               Géneros
-            </a>
-            <a href="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
+            </Link>
+            <Link to="#" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
               Aleatorio
-            </a>
+            </Link>
           </div>
 
           {/* Botón hamburguesa (mobile) */}
@@ -48,18 +47,18 @@ export default function Navbar() {
       {/* Menú mobile */}
       {open && (
         <div className="md:hidden px-2 pb-3 space-y-1">
-          <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          <Link to="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Inicio
-          </a>
-          <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          </Link>
+          <Link to="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Conócenos
-          </a>
-          <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          </Link>
+          <Link to="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Géneros
-          </a>
-          <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          </Link>
+          <Link to="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
             Aleatorio
-          </a>
+          </Link>
         </div>
       )}
     </nav>
