@@ -35,7 +35,9 @@ export default function Hero({ onGenerate }) {
           </svg>
 
           <h1 className="relative text-3xl md:text-5xl font-semibold text-gray-100">
-            <span className="text-emerald-500">Refréscate</span> con nueva música.<br className="hidden md:block" />
+            <span className="text-emerald-500">Refréscate</span> con nueva
+            música.
+            <br className="hidden md:block" />
             Ven a <span className="text-amber-300">descubrir</span>.
           </h1>
         </div>
@@ -47,16 +49,10 @@ export default function Hero({ onGenerate }) {
         <div className="mt-6 flex flex-wrap gap-3">
           <button
             onClick={onGenerate}
-            className="rounded-xl bg-emerald-600 px-5 py-3 font-medium text-gray-900 shadow hover:scale-[1.02] hover:shadow-lg transition"
+            className="rounded-xl bg-emerald-400 px-5 py-3 font-medium text-gray-900 shadow hover:scale-[1.02] hover:shadow-lg transition"
           >
             Crear género
           </button>
-          <a
-            href="/generos"
-            className="rounded-xl border border-white/15 px-5 py-3 font-medium text-gray-200 hover:bg-white/5 transition"
-          >
-            Ver historial
-          </a>
         </div>
       </div>
     </section>
