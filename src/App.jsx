@@ -1,21 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Home from "./pages/Home.jsx";       // 👈 usa la página real
+// (luego crearás Sobre.jsx, Generos.jsx, Aleatorio.jsx en /Page)
 
-function Home() {
-  return <h1>Inicio</h1>;
-}
-
-function Sobre() {
-  return <h1>Conócenos</h1>;
-}
-
-function Generos() {
-  return <h1>Géneros</h1>;
-}
-
-function Aleatorio() {
-  return <h1>Aleatorio</h1>;
-}
+function Sobre() { return <h1>Conócenos</h1>; }
+function Generos() { return <h1>Géneros</h1>; }
+function Aleatorio() { return <h1>Aleatorio</h1>; }
 
 export default function App() {
   return (
@@ -30,5 +20,7 @@ export default function App() {
     </Router>
   );
 }
+
+
 
  

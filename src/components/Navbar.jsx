@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/jazz_logo.png";
+import logo from "../assets/logo_navbar.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

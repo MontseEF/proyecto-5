@@ -1,0 +1,17 @@
+
+@keyframes pulse-slow { 
+  0%, 100% { opacity: .6 } 
+  50% { opacity: 1 } 
+}
+.animate-pulse-slow { 
+  animation: pulse-slow 6s ease-in-out infinite; 
+}
+
+@keyframes wave {
+  0%   { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -600; }
+}
+.animate-wave {
+  stroke-dasharray: 300 20;
+  animation: wave 8s linear infinite;
+}
