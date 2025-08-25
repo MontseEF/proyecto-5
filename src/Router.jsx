@@ -11,7 +11,7 @@ export default function AppRouter() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/sobre" element={<Conocenos />} />
+        <Route path="/conocenos" element={<Conocenos />} />
         <Route path="/generos" element={<Generos />} />
         <Route path="/aleatorio" element={<Aleatorio />} />
       </Routes>

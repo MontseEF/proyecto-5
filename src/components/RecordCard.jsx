@@ -5,10 +5,7 @@ export default function RecordCard({ title, tags = [] }) {
       {tags.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-2">
           {tags.map((t, i) => (
-            <span
-              key={i}
-              className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300"
-            >
+            <span key={i} className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
               {t}
             </span>
           ))}

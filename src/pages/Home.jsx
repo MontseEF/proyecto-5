@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Hero from "../components/Hero.jsx";
 import NowPlayingCard from "../components/NowPlayingCard.jsx";
-import GenreCard from "../components/GenreCard.jsx";
+import RecordCard from "../components/RecordCard.jsx";
 import Footer from "../components/Footer.jsx";
 import { fetchGenre } from "../lib/api.js";
 
@@ -50,6 +50,7 @@ export default function Inicio() {
             <NowPlayingCard genre={currentGenre} loading={loading} error={error} />
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur flex items-center justify-center text-gray-400">
+          <p>Próximamente podrás guardar tus favoritas</p>
          </div>
         </div>
 
@@ -60,7 +61,7 @@ export default function Inicio() {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {history.map((title, idx) => (
-                <GenreCard key={idx} title={title} />
+                <RecordCard key={idx} title={title} />
               ))}
             </div>
           )}
