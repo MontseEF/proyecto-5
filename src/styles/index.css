@@ -1,5 +1,15 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "./animations.css";
+
+
+body {
+  @apply font-sans bg-[#0B0F14] text-gray-100;
+}
+
 
 
 
