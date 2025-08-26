@@ -14,25 +14,32 @@ export default function Hero({ onGenerate }) {
         {/* Título con la onda pasando entre las letras */}
         <div className="relative mt-3">
           <svg
-            className="pointer-events-none absolute -left-4 -right-4 top-6 md:top-8 h-10 md:h-12 opacity-70 mix-blend-screen"
-            viewBox="0 0 800 120"
-            fill="none"
-            aria-hidden="true"
-          >
-            <defs>
-              <linearGradient id="wave" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0%" stopColor="#085421ff" />
-                <stop offset="100%" stopColor="#F59E0B" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M0,60 C80,20 160,100 240,60 S400,20 480,60 640,100 720,60 800,20 880,60"
-              stroke="url(#wave)"
-              strokeWidth="6"
-              strokeLinecap="round"
-              className="animate-wave"
-            />
-          </svg>
+  className="pointer-events-none absolute left-0 right-0 top-6 md:top-8 h-10 md:h-12 opacity-70 mix-blend-screen w-full"
+  viewBox="0 0 800 120"
+  preserveAspectRatio="none"            
+  fill="none"
+  aria-hidden="true"
+>
+  <defs>
+    <linearGradient id="wave" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stopColor="#22C55E" />
+      <stop offset="100%" stopColor="#F59E0B" />
+    </linearGradient>
+  </defs>
+  <path
+    d="
+      M0,60
+      C80,20 160,100 240,60
+      S400,20 480,60
+      640,100 720,60
+      800,20 880,60
+    "
+    stroke="url(#wave)"
+    strokeWidth="6"
+    strokeLinecap="round"
+    className="[vector-effect:non-scaling-stroke]"  
+  />
+</svg>
 
           <h1 className="relative text-3xl md:text-5xl font-semibold text-gray-100">
             <span className="text-emerald-500">Refréscate</span> con nueva
