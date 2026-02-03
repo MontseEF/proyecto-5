@@ -3,7 +3,7 @@
 Aplicación que consume la API pública **Binary Jazz – Genrenator** para crear géneros musicales aleatorios y mostrarlos en una interfaz moderna. Además reproduce un preview de 30s desde iTunes cuando hay coincidencias.
 
 ## 🚀 Demo
-(https://68ad34d6736e5a045eb0ca8d--proyecto-me-5.netlify.app/)
+(https://proyecto-5-musica.netlify.app/)
 
 ## 🧩 Tecnologías
 - React + Vite
